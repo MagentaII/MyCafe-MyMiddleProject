@@ -41,9 +41,7 @@ public class LoginDialogFragment extends DialogFragment {
                 })
                 .setNegativeButton(R.string.clear, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        et_username.getText().clear();
-                        et_password.getText().clear();
-                        dialog.dismiss();
+
                     }
                 })
                 .setNeutralButton(R.string.cancel, new DialogInterface.OnClickListener() {
