@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:background="@drawable/ic_login_edittext">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/drink1"/>
+
+                <TextView
+                    android:id="@+id/drinkName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="珍珠奶茶"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="130dp"/>
+
+                <TextView
+                    android:id="@+id/moneyIcon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="130dp"/>
+
+                <TextView
+                    android:id="@+id/drinkValue1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="70"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="145dp"/>
+
+                <Button
+                    android:id="@+id/btn_buy1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_login_edittext"
+                    android:text="BUY"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:background="@drawable/ic_login_edittext">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/drink2"/>
+
+                <TextView
+                    android:id="@+id/drinkName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="抹茶珍奶"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="130dp"/>
+
+                <TextView
+                    android:id="@+id/moneyIcon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="130dp"/>
+
+                <TextView
+                    android:id="@+id/drinkValue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="90"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="145dp"/>
+
+                <Button
+                    android:id="@+id/btn_buy2"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_login_edittext"
+                    android:text="BUY"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:background="@drawable/ic_login_edittext">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/drink3"/>
+
+                <TextView
+                    android:id="@+id/drinkName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="焦糖奶茶"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="130dp"/>
+
+                <TextView
+                    android:id="@+id/moneyIcon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="130dp"/>
+
+                <TextView
+                    android:id="@+id/drinkValue3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="145dp"/>
+
+                <Button
+                    android:id="@+id/btn_buy3"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_login_edittext"
+                    android:text="BUY"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp"
+                android:background="@drawable/ic_login_edittext">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/drink4"/>
+
+                <TextView
+                    android:id="@+id/drinkName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="草莓奶茶"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="130dp"/>
+
+                <TextView
+                    android:id="@+id/moneyIcon4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="130dp"/>
+
+                <TextView
+                    android:id="@+id/drinkValue4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="70"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="145dp"/>
+
+                <Button
+                    android:id="@+id/btn_buy4"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_login_edittext"
+                    android:text="BUY"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
