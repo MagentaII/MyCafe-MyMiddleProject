@@ -1,4 +1,4 @@
-package com.example.mycafe;
+package com.example.mycafe.ui.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.mycafe.MainActivity;
 import com.example.mycafe.databinding.ActivityLoginScreenBinding;
 
 public class LoginScreen extends AppCompatActivity implements LoginDialogFragment.loginListener {

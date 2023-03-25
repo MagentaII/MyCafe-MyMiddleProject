@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.Toast;
 
+import com.example.mycafe.ui.home.AddMoneyDialogFragment;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.fragment.app.DialogFragment;
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements AddMoneyDialogFra
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_profile, R.id.nav_mall,R.id.nav_slideshow, R.id.nav_Gmail, R.id.nav_googleMap)
+                R.id.nav_home, R.id.nav_profile, R.id.nav_mall, R.id.nav_Gmail, R.id.nav_googleMap)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

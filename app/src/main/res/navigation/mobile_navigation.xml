@@ -13,19 +13,14 @@
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.example.mycafe.ui.gallery.GalleryFragment"
+        android:name="com.example.mycafe.ui.profile.ProfileFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
     <fragment
         android:id="@+id/nav_mall"
-        android:name="com.example.mycafe.MallFragment"
+        android:name="com.example.mycafe.ui.mall.MallFragment"
         android:label="@string/menu_mall"
         tools:layout="@layout/fragment_mall" />
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.mycafe.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
 
     <fragment
         android:id="@+id/nav_googleMap"

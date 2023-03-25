@@ -1,14 +1,14 @@
-package com.example.mycafe.ui.gallery;
+package com.example.mycafe.ui.profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class ProfileViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public ProfileViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("0");
     }

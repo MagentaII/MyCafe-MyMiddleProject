@@ -1,4 +1,4 @@
-package com.example.mycafe;
+package com.example.mycafe.ui.login;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -12,41 +12,48 @@ import androidx.fragment.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
-public class AddMoneyDialogFragment extends DialogFragment {
-    private EditText et_want_save_money;
-    private AddMoneyListener listener;
+import com.example.mycafe.R;
+
+public class LoginDialogFragment extends DialogFragment {
+
+    private EditText et_username;
+    private EditText et_password;
+    private LoginDialogFragment.loginListener listener;
+
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         // Get the layout inflater
         LayoutInflater inflater = requireActivity().getLayoutInflater();
-
-        View view = inflater.inflate(R.layout.fragment_add_money_dialog, null);
-
+        View view = inflater.inflate(R.layout.fragment_login_dialog, null);
         // Inflate and set the layout for the dialog
         // Pass null as the parent view because its going in the dialog layout
         builder.setView(view)
-                // Add action buttons
-                .setPositiveButton(R.string.add, new DialogInterface.OnClickListener() {
+                // Add action button
+                .setPositiveButton(R.string.signin, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
 
-                        String money = et_want_save_money.getText().toString();
-                        listener.appleTexts(money);
-                        Toast.makeText(getContext(), "加值成功", Toast.LENGTH_SHORT).show();
+                        String username = et_username.getText().toString();
+                        String password = et_password.getText().toString();
+                        listener.appleTexts(username, password);
                     }
                 })
-                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                .setNegativeButton(R.string.clear, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        AddMoneyDialogFragment.this.getDialog().cancel();
+
+                    }
+                })
+                .setNeutralButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        LoginDialogFragment.this.getDialog().cancel();
                     }
                 });
 
-
-        et_want_save_money = view.findViewById(R.id.et_want_save_money);
+        et_username = view.findViewById(R.id.et_username);
+        et_password = view.findViewById(R.id.et_password);
 
         return builder.create();
     }
@@ -56,13 +63,14 @@ public class AddMoneyDialogFragment extends DialogFragment {
         super.onAttach(context);
 
         try {
-            listener = (AddMoneyListener) context;
+            listener = (LoginDialogFragment.loginListener) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString() + "must implement AddMoneyListener");
         }
     }
 
-    public interface AddMoneyListener{
-        void appleTexts(String money);
+    public interface loginListener{
+        void appleTexts(String username, String password);
     }
+
 }

@@ -1,4 +1,4 @@
-package com.example.mycafe;
+package com.example.mycafe.ui.mall;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.mycafe.R;
 import com.example.mycafe.databinding.FragmentMallBinding;
 
 public class MallFragment extends Fragment implements AdapterView.OnItemSelectedListener {
