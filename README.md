@@ -18,11 +18,11 @@
 ---
 ### 功能示意圖：
 >### 一、登入畫面(Dialog)
-> ![1.png](https://github.com/MagentaII/MyCafe-MyMiddleProject/blob/master/images/1.png)
-> ![2.png](https://github.com/MagentaII/MyCafe-MyMiddleProject/blob/master/images/2.png)
+> ![1.png](https://github.com/MagentaII/images/blob/main/1.png)
+> ![2.png](https://github.com/MagentaII/images/blob/main/2.png)
 
 >### 二、 登入後判斷帳密正確與否
-> ![3.png](https://github.com/MagentaII/MyCafe-MyMiddleProject/blob/master/images/3.png)
-> ![4.png](https://github.com/MagentaII/MyCafe-MyMiddleProject/blob/master/images/4.png)
-> ![5.png](https://github.com/MagentaII/MyCafe-MyMiddleProject/blob/master/images/4.png)
-> ![6.png](https://github.com/MagentaII/MyCafe-MyMiddleProject/blob/master/images/5.png)
+> ![3.png](https://github.com/MagentaII/images/blob/main/3.png)
+> ![4.png](https://github.com/MagentaII/images/blob/main/4.png)
+> ![5.png](https://github.com/MagentaII/images/blob/main/5.png)
+> ![6.png](https://github.com/MagentaII/images/blob/main/6.png)
