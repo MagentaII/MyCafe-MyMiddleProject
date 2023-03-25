@@ -21,8 +21,18 @@
 > ![1.png](https://github.com/MagentaII/images/blob/main/1.png)
 > ![2.png](https://github.com/MagentaII/images/blob/main/2.png)
 
->### 二、 登入後判斷帳密正確與否
+>### 二、 登入後判斷帳密正確與否(Toast + Intent)
 > ![3.png](https://github.com/MagentaII/images/blob/main/3.png)
 > ![4.png](https://github.com/MagentaII/images/blob/main/4.png)
 > ![5.png](https://github.com/MagentaII/images/blob/main/5.png)
 > ![6.png](https://github.com/MagentaII/images/blob/main/6.png)
+
+>### 三、 儲值功能(FAB ＋ Dialog)
+> ![7.png](https://github.com/MagentaII/images/blob/main/7.png)
+> ![8.png](https://github.com/MagentaII/images/blob/main/8.png)
+
+>### 四、 商品展示(Spinner)
+> ![9.png](https://github.com/MagentaII/images/blob/main/9.png)
+
+>### 五、 畫面切換(Navigation Drawer)
+> ![10.png](https://github.com/MagentaII/images/blob/main/10.png)
